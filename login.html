@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>BinGuardian</h1>
+    </div>
+    <form id="loginForm" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+        <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+    </form>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+        
+            var expectedUsername = 'admin'; // replace with the expected username
+            var expectedPassword = 'password'; // replace with the expected password
+        
+            if (username === expectedUsername && password === expectedPassword) {
+                window.location.href = 'home.html'; // replace 'main.html' with the path to your main page
+            } else {
+                alert('Incorrect username or password!');
+            }
+        });
+    </script>
+</body>
+</html>
