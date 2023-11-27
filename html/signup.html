@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register BinGuardian</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Sign Up BinGuardian</h1>
+    </div>
+    <div class="box">
+        <form method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            <input type="submit" value="Register">
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+            window.location.href = 'signin.html'; // replace 'login.html' with the path to your login page
+        });
+        function redirectToLogin() {
+            window.location.href = 'signin.html'; // replace 'login.html' with the path to your login page
+        }
+    </script>
+</body>
+</html>
