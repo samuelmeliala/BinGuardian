@@ -506,7 +506,7 @@ a:hover {
 }
 
 .cards-1 .h2-heading span {
-	color: #f25c05;
+	color: #86A789;
 	text-decoration: underline;
 }
 
@@ -933,7 +933,7 @@ a:hover {
 .footer {
 	padding-top: 6.5rem;
 	padding-bottom: 2rem;
-	background-color: #272556;
+	background-color: #537656;
 }
 
 .footer a {
@@ -974,7 +974,7 @@ a:hover {
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
-	color: #272556;
+	color: #537656;
 	transition: all 0.2s ease;
 }
 
@@ -992,7 +992,7 @@ a:hover {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: #272556;
+	background-color: #537656;
 	text-align: center;
 }
 
